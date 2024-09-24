@@ -571,19 +571,3 @@ nav svg {
   }
 }
 
-input[type="date"]:before {
-  content: attr(placeholder);
-  color: #444;
-  margin-right: 0.5em;
-}
-input[type="time"]:before {
-  content: attr(placeholder);
-  color: #444;
-  margin-right: 0.5em;
-}
-.logo-img{
-  width: 150px;
-}
-footer .logo-img{
-  width: 100%;
-}
