@@ -35,7 +35,7 @@ const App = () => {
     fetchUser();
   }, [isAuthenticated]);
 
-  /*return (
+ return (
     <>
       <Router>
         <Navbar />
@@ -53,4 +53,4 @@ const App = () => {
   );
 };
 
-export default App;*/
+export default App;
