@@ -530,7 +530,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/*.add-doctor-form form .first-wrapper div:last-child {
+.add-doctor-form form .first-wrapper div:last-child {
   flex: 2;
   display: flex;
   gap: 30px;
@@ -573,4 +573,4 @@ input[type="time"]:before {
   content: attr(placeholder);
   color: #444;
   margin-right: 0.5em;
-}////
+}
