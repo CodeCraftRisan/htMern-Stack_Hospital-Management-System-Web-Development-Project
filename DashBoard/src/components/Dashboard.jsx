@@ -43,7 +43,10 @@ const Dashboard = () => {
     }
   };
 
-  
+  const { isAuthenticated, admin } = useContext(Context);
+  if (!isAuthenticated) {
+    return <Navigate to={"/login"} />;
+  }
 
   return (
     <>
@@ -110,7 +113,16 @@ const Dashboard = () => {
                             handleUpdateStatus(appointment._id, e.target.value)
                           }
                         >
-                          
+                          <option value="Pending" className="value-pending">
+                            Pending
+                          </option>
+                          <option value="Accepted" className="value-accepted">
+                            Accepted
+                          </option>
+                          <option value="Rejected" className="value-rejected">
+                            Rejected
+                          </option>
+                        </select>
                       </td>
                       <td>{appointment.hasVisited === true ? <GoCheckCircleFill className="green"/> : <AiFillCloseCircle className="red"/>}</td>
                     </tr>
